@@ -21,7 +21,7 @@ except:
     os.system('pip install requests && pip install bs4 && pip install pystyle && pip install pycryptodome')
 from pystyle import Add, Center, Anime, Colors, Colorate, Write, System
 os.system('cls')
-confirmation = print("\033[1;31m                                 Only press enter when you agree and understand the TOS.")
+confirmation = print("\033[1;31m                                Press any key only when you agree and understand the TOS.")
 TOS = print(Box.Lines("MCC's Archive Terms of Services (TOS)"))
 banner = f"""
 
