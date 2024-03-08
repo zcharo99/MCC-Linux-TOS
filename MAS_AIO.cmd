@@ -66,7 +66,7 @@ popd
 
 cls
 color 07
-title  Microsoft Activation Scripts
+title  Microsoft Activator
 
 set _args=
 set _elev=
@@ -190,7 +190,7 @@ setlocal EnableDelayedExpansion
 
 cls
 color 07
-title  Microsoft Activation Scripts 1.8
+title Microsoft Activator
 mode 76, 30
 set "mastemp=%SystemRoot%\Temp\__MAS"
 if exist "%mastemp%\.*" rmdir /s /q "%mastemp%\" %nul%
