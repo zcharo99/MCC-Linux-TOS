@@ -1,7 +1,7 @@
 {
-    "trigger_hotkey": "0xA4",
-    "base_delay":0.01,
-    "trigger_delay":"40",
+    "phim_tat": "0xA4",
+    "tocdo_ban":0.01,
+    "donhay_trigger":"40",
     "color_tolerance": 70,
-    "always_enabled":false
+    "luon_bat":false
 }
