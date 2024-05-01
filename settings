@@ -2,6 +2,6 @@
     "phim_tat": "0x01",
     "tocdo_ban":0.01,
     "donhay_trigger":"40",
-    "do_chap_nhan_mau": 70,
+    "do_chap_nhan_mau":70,
     "luon_bat":false
 }
