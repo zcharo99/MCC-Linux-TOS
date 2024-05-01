@@ -1,7 +1,7 @@
 {
-    "phim_tat": "0xA4",
+    "phim_tat": "0x01",
     "tocdo_ban":0.01,
     "donhay_trigger":"40",
-    "color_tolerance": 70,
+    "do_chap_nhan_mau": 70,
     "luon_bat":false
 }
