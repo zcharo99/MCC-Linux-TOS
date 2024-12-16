@@ -48,6 +48,7 @@ banner = f"""
 Write.Print((banner), Colors.white_to_green, interval=0.00025)
 msvcrt.getch()
 file = os.path.join(os.getenv('APPDATA'), 'MCCFree', 'MCCTOS', 'TOSVDOIAHWOIHSAKLFHWA.txt')
+os.makedirs(os.path.dirname(file), exist_ok=True)
 with open(file, 'a') as file:
     file.write("""The user accepted MCC's Archive's terms of service.""")
     file.close()
