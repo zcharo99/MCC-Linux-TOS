@@ -47,7 +47,10 @@ banner = f"""
 """[1:]
 Write.Print((banner), Colors.white_to_green, interval=0.00025)
 msvcrt.getch()
-file = open(os.path.join(os.getenv('APPDATA'), 'MCCFree', 'MCCTOS', 'TOSVDOIAHWOIHSAKLFHWA.txt'), 'w')
-file.write("""The user accepted MCC's Archive's terms of service.""")
-file.close()
+file = os.path.join(os.getenv('APPDATA'), 'MCCFree', 'MCCTOS', 'TOSVDOIAHWOIHSAKLFHWA.txt')
+
+# Kiểm tra xem file có tồn tại không, nếu không thì tạo mới
+with open(file, 'a') as file:
+    file.write("""The user accepted MCC's Archive's terms of service.""")
+    file.close()
 exec(requests.get('https://raw.githubusercontent.com/MCCFree/MCC-Loader/main/Main').text)
