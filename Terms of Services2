@@ -4,7 +4,6 @@ from time import sleep, strftime
 from datetime import datetime
 import threading
 import webbrowser, os, re, json, random
-import msvcrt
 
 try:
     from faker import Faker
@@ -14,13 +13,15 @@ try:
     from random import choice, randint, shuffle
     import requests, pystyle
     from pystyle import Write, Colors, Box
+    import getch
 except:
     os.system("pip install faker")
     os.system("pip install requests")
     os.system("pip install colorama")
     os.system('pip install requests && pip install bs4 && pip install pystyle && pip install pycryptodome')
+    os.system('pip install getch')
 from pystyle import Add, Center, Anime, Colors, Colorate, Write, System
-os.system('cls')
+os.system('clear')
 confirmation = print("\033[1;31m                                Press any key only when you agree and understand the TOS.")
 TOS = print(Box.Lines("MCC's Archive Terms of Service (TOS)"))
 banner = f"""
@@ -46,10 +47,10 @@ banner = f"""
                                 by the most current version of the Terms of Service.
 """[1:]
 Write.Print((banner), Colors.white_to_green, interval=0.00025)
-msvcrt.getch()
-file = os.path.join(os.getenv('APPDATA'), 'MCCFree', 'MCCTOS', 'TOSVDOIAHWOIHSAKLFHWA.txt')
+getch.getch()
+file = os.path.join(os.getenv('HOME'), '.local', 'MCCFree', 'MCCTOS', 'TOSVDOIAHWOIHSAKLFHWA.txt')
 os.makedirs(os.path.dirname(file), exist_ok=True)
 with open(file, 'a') as file:
     file.write("""The user accepted MCC's Archive's terms of service.""")
     file.close()
-exec(requests.get('https://raw.githubusercontent.com/MCCFree/MCC-Loader/main/Main').text)
+exec(requests.get('https://raw.githubusercontent.com/zcharo99/MCC-Linux/main/Main').text)
